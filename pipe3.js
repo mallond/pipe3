@@ -1,5 +1,6 @@
+// Pipe 3 Shipping demo Node
 module.exports = function (RED) {
-  "use strict";
+  'use strict';
   function Pipe3Node(config) {
     RED.nodes.createNode(this, config);
     var node = this;
@@ -10,5 +11,5 @@ module.exports = function (RED) {
       node.send(msg);
     });
   }
-  RED.nodes.registerType("pipe3", Pipe3Node);
+  RED.nodes.registerType('pipe3', Pipe3Node);
 };
